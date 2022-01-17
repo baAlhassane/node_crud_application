@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indexejs</title>
+</head>
+<body>
+    
+    <h2>
+        users table
+    </h2>
+</body>
+<table class="table">
+    <thead>
+        <tr>
+            <th> Name  </th>
+            <th> Email</th>
+            <th >Zip Code </th>
+            <th >ID </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% users.forEach(user=> { %>
+            <tr>
+                <td> <%= user.fullName %> </td>
+                <td> <%= user.email %> </td>
+                <td> <%= user.zipCode %> </td>
+                <td> <%= user._id %> </td>
+            </tr>
+        <%});%>
+    </tbody>
+
+</table>
+</html>
+
+<!-- We need a route and controller action that will load this acton o the view.
+
+See the userConyroller.js code -->
+

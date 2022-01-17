@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user</title>
+</head>
+<body>
+    <div>
+        
+    </div class="data-form">
+    <form action="/users/create" method="POST">
+        <h2> Create a new user :</h2>
+
+        <label for="inputfirstName">First Name </label>
+        <input type="text" name="first" id="inputfirstname" placeholder="first name" autofocus > 
+        <br> 
+        <label for="inputSecondeName">Seconde Name </label>
+        <input type="text" name="last" id="inputlastname" placeholder="seconde name" autofocus >
+        <br> 
+        <label for="inputPasworh">password  </label> 
+        <input type="password" name="password" id="inputpassword" placeholder="password" reqired>
+        <br> 
+        <label for="inputEmail">Email adresse  </label> 
+        <input type="email" name="email" id="inputemail" placeholder="email" reqired>
+        <br> 
+        <label for="inputZipCode">ZipCode  </label> 
+        <input type="text" name="zipCode" id="inputZipCode" pattern="\d*" placeholder="Zip code " reqired>
+        <br> 
+
+        <button type ="submit"> sign in  </button>
+        <br> 
+        <!-- know we need a route and controller action  to serve this view. -->
+        
+
+        
+
+          
+
+    </form>
+</body>
+</html>
